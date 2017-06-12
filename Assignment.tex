@@ -135,6 +135,28 @@ LocMetrics\cite{locmetrics} is very similar to what CLOC does. We did find this 
 The app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. Looking at the butterfly diagram below, we would ideally ignore the modules, plugins and libraries for now and focus on the app directory.
 \section{Entry Point}
 \section{Build Process}
+Analysis of any application can not be completed without building it. Like every application provide documentation related to how one can build the application on any platform eg Linux, Mac etc.
+Building any application not only help to compile any application to create executable but end up to helping to figure out what are the entry point with in the code of application.  Like in case of Gimp they have "MakeFile.am" which is a autogenerator file with in "master/app" directory to create "Makefile.in" . If you analyze Makefile.am you will get that "main.c" is the file from were compilation starts.
+\newline
+We tried to use Doxygen to generate call graphs for comparison and better understanding. However, the tool crashed on the first go. And on the second go generated quite a bunch of call graphs when run directly on the master/app directory so will leave this tool aside for now. 
+\newline 
+Talking about Dependencies required for the Gimp to get build you can check with in GIMP master folder you will find the INSTAL.in file which will tell how to build the application on particular platform with dependencies required. We are using Linux environment to build the application.
+To build this process we have two different type of	build system provided one through a Tarball and other  building from latest source (Git).We used the latter one to build the application.
+Being a product of GNOME ,gimp use many of their pre existing libraries which they utilize for their other products  as well like GLib , GObject ,GTK+, Cairo, Pango. 
+The two major libraries which gimp uses are GEGL and babl which one need to install before building this application. And both can be installed either using tarball or git on system before building. Links for both the libraries are present on wiki page of the application.\cite{wiki}
+\newline 
+Once this is done we are require to just run autogen.sh which is a auto maker for configuration file. Once configuration file is generated we can run it to auto generate makefile. Also this is where you get to know if you have installed all libraries or not. This is the place where we got stuck as I already had a previous gimp installation and did not change the path for the new installation and end up having conflict between both of the installation which got resolved by just changing the default path. Once make file is generated you can run the “make” command  and then “make install”  to complete the build process.
+So if we see the major flow of the build after installing all libraries goes like  
+as below:
+\newline
+ autogen.sh---config---make---make install
+\newline
+
+
+
+
+
+
 \section{Control Flow}
 \section{Dependencies}
 \section{Functional Needs}
@@ -177,6 +199,9 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 	
 	\bibitem{cloc} 
 	https://github.com/AlDanial/cloc
+	
+	\bibitem{wiki}
+	https://wiki.gimp.org/
 	
 	
 	

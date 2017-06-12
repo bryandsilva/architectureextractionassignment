@@ -1,37 +1,16 @@
-<<<<<<< HEAD
-\select@language {english}
-\contentsline {section}{\numberline {1}Finding a Software System}{2}
-\contentsline {section}{\numberline {2}About GIMP}{2}
-\contentsline {section}{\numberline {3}Counting the lines of code}{2}
-\contentsline {subsection}{\numberline {3.1}Count Lines of Code}{2}
-\contentsline {subsection}{\numberline {3.2}LocMetrics}{2}
-\contentsline {section}{\numberline {4}Directory Structure}{4}
-\contentsline {section}{\numberline {5}Entry Point}{4}
-\contentsline {section}{\numberline {6}Build Process}{4}
-\contentsline {section}{\numberline {7}Control Flow}{4}
-\contentsline {section}{\numberline {8}Dependencies}{4}
-\contentsline {section}{\numberline {9}Functional Needs}{4}
-\contentsline {section}{\numberline {10}Conclusion}{4}
-\contentsline {subsection}{\numberline {10.1}Tables and Figures}{4}
-=======
 \select@language {english}
 \contentsline {section}{\numberline {1}Finding a Software System}{2}
 \contentsline {section}{\numberline {2}About GIMP}{2}
 \contentsline {section}{\numberline {3}Counting the lines of code}{3}
 \contentsline {subsection}{\numberline {3.1}Count Lines of Code}{3}
 \contentsline {subsection}{\numberline {3.2}LocMetrics}{4}
-\contentsline {section}{\numberline {4}Directory Structure}{4}
-\contentsline {section}{\numberline {5}Entry Point}{4}
-\contentsline {section}{\numberline {6}Build Process}{4}
-\contentsline {section}{\numberline {7}Control Flow}{4}
-\contentsline {section}{\numberline {8}Dependencies}{4}
-\contentsline {section}{\numberline {9}Functional Needs}{4}
-\contentsline {section}{\numberline {10}Algorithms}{4}
-\contentsline {section}{\numberline {11}Conclusion}{5}
-\contentsline {section}{\numberline {12}Some \LaTeX {} Examples}{5}
-\contentsline {subsection}{\numberline {12.1}Sections}{5}
-\contentsline {subsection}{\numberline {12.2}Comments}{5}
-\contentsline {subsection}{\numberline {12.3}Tables and Figures}{5}
-\contentsline {subsection}{\numberline {12.4}Mathematics}{6}
-\contentsline {subsection}{\numberline {12.5}Lists}{6}
->>>>>>> 514a76e2681a4d4faaa966a155300790a21f676b
+\contentsline {section}{\numberline {4}Architecture Extraction Tool}{4}
+\contentsline {section}{\numberline {5}Directory Structure}{4}
+\contentsline {section}{\numberline {6}Entry Point}{4}
+\contentsline {section}{\numberline {7}Build Process}{4}
+\contentsline {section}{\numberline {8}Control Flow}{5}
+\contentsline {section}{\numberline {9}Dependencies}{5}
+\contentsline {section}{\numberline {10}Functional Needs}{5}
+\contentsline {section}{\numberline {11}Algorithms}{5}
+\contentsline {section}{\numberline {12}Conclusion}{6}
+\contentsline {subsection}{\numberline {12.1}Tables and Figures}{6}
