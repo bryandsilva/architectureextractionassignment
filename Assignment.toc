@@ -1,0 +1,18 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Finding a Software System}{1}
+\contentsline {section}{\numberline {2}About GIMP}{2}
+\contentsline {section}{\numberline {3}Counting the lines of code}{2}
+\contentsline {subsubsection}{\numberline {3.0.1}Count Lines of Code}{2}
+\contentsline {section}{\numberline {4}Directory Structure}{4}
+\contentsline {section}{\numberline {5}Entry Point}{4}
+\contentsline {section}{\numberline {6}Build Process}{4}
+\contentsline {section}{\numberline {7}Control Flow}{4}
+\contentsline {section}{\numberline {8}Dependencies}{4}
+\contentsline {section}{\numberline {9}Functional Needs}{4}
+\contentsline {section}{\numberline {10}Conclusion}{4}
+\contentsline {section}{\numberline {11}Some \LaTeX {} Examples}{4}
+\contentsline {subsection}{\numberline {11.1}Sections}{4}
+\contentsline {subsection}{\numberline {11.2}Comments}{4}
+\contentsline {subsection}{\numberline {11.3}Tables and Figures}{4}
+\contentsline {subsection}{\numberline {11.4}Mathematics}{5}
+\contentsline {subsection}{\numberline {11.5}Lists}{5}
