@@ -1,9 +1,9 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Finding a Software System}{2}
 \contentsline {section}{\numberline {2}About GIMP}{2}
-\contentsline {section}{\numberline {3}Counting the lines of code}{2}
-\contentsline {subsection}{\numberline {3.1}Count Lines of Code}{2}
-\contentsline {subsection}{\numberline {3.2}LocMetrics}{2}
+\contentsline {section}{\numberline {3}Counting the lines of code}{3}
+\contentsline {subsection}{\numberline {3.1}Count Lines of Code}{3}
+\contentsline {subsection}{\numberline {3.2}LocMetrics}{4}
 \contentsline {section}{\numberline {4}Directory Structure}{4}
 \contentsline {section}{\numberline {5}Entry Point}{4}
 \contentsline {section}{\numberline {6}Build Process}{4}
@@ -16,5 +16,5 @@
 \contentsline {subsection}{\numberline {12.1}Sections}{5}
 \contentsline {subsection}{\numberline {12.2}Comments}{5}
 \contentsline {subsection}{\numberline {12.3}Tables and Figures}{5}
-\contentsline {subsection}{\numberline {12.4}Mathematics}{5}
+\contentsline {subsection}{\numberline {12.4}Mathematics}{6}
 \contentsline {subsection}{\numberline {12.5}Lists}{6}
