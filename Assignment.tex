@@ -135,6 +135,19 @@ LocMetrics\cite{locmetrics} is very similar to what CLOC does. We did find this 
 \section{Control Flow}
 \section{Dependencies}
 \section{Functional Needs}
+\section{Algorithms}
+To find the underlying algorithms behind the operations performed on gimp, the wiki for the same had a link to the Algorithms used. We expected to find all the underlying algorithms here but encountered a problem. There was only one operation described here shown in figure \ref{fig:algorithm}.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{algorithm.png}
+\caption{\label{fig:algorithm}Documentation on operation algorithms}
+\end{figure}
+
+Since this is implemented in the gimpoperationflood.c, the best way to find the algorithms for the other operations performed would be to have a look at where this file is located.
+ 
+The app/operations folder is where this file located. Looking at the other files in the folder, we got an idea of where to look incase we had to change or add any further operations. Since these operations are triggered using the GUI, changing something here would cause us to look at the UI elements to be updated as well.
+
 \section{Conclusion}
 \section{Some \LaTeX{} Examples}
 \label{sec:examples}

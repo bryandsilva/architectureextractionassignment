@@ -10,10 +10,11 @@
 \contentsline {section}{\numberline {7}Control Flow}{4}
 \contentsline {section}{\numberline {8}Dependencies}{4}
 \contentsline {section}{\numberline {9}Functional Needs}{4}
-\contentsline {section}{\numberline {10}Conclusion}{4}
-\contentsline {section}{\numberline {11}Some \LaTeX {} Examples}{4}
-\contentsline {subsection}{\numberline {11.1}Sections}{4}
-\contentsline {subsection}{\numberline {11.2}Comments}{4}
-\contentsline {subsection}{\numberline {11.3}Tables and Figures}{4}
-\contentsline {subsection}{\numberline {11.4}Mathematics}{5}
-\contentsline {subsection}{\numberline {11.5}Lists}{5}
+\contentsline {section}{\numberline {10}Algorithms}{4}
+\contentsline {section}{\numberline {11}Conclusion}{5}
+\contentsline {section}{\numberline {12}Some \LaTeX {} Examples}{5}
+\contentsline {subsection}{\numberline {12.1}Sections}{5}
+\contentsline {subsection}{\numberline {12.2}Comments}{5}
+\contentsline {subsection}{\numberline {12.3}Tables and Figures}{5}
+\contentsline {subsection}{\numberline {12.4}Mathematics}{5}
+\contentsline {subsection}{\numberline {12.5}Lists}{6}
