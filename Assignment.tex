@@ -117,6 +117,7 @@ We looked at the following software systems and games.
 
 We also looked at Doom3, SuperTuxKart, Wordpress, TuxRunner and Linux but found GIMP to be the most interesting on to use for this assignment
 \section{About GIMP}
+Gimp was designed initially as a General image manipulation program. This was later changed to GNU Image Manipulation Program. It is free and openly available to retouch and edit images, convert image formats and more specialized tasks targeted towards image manipulation. GIMP provides an interface to handle simple graphics needs without learning advanced methods for image manipulation. GIMP is more user friendly as compared to other photoshop techniques and can be modified to fit your needs. And the best part about it is that it is free.
 \section{Counting the lines of code}
 \subsection{Count Lines of Code}
 Count Lines of Code, abbreviated as CLOC is a software used to count comment lines, blank lines and physical lines of code\cite{gitid}. We used this software initially when we looked at what software system we need to pick. We can look at figure \ref{fig:clocgimp} for the output for GIMP.
@@ -129,12 +130,27 @@ Count Lines of Code, abbreviated as CLOC is a software used to count comment lin
 \subsection{LocMetrics}
 LocMetrics\cite{locmetrics} is very similar to what CLOC does. We did find this software interesting because of how it visualized the output.
 
+\section{Architecture Extraction Tool}
 \section{Directory Structure}
+The app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. Looking at the butterfly diagram below, we would ideally ignore the modules, plugins and libraries for now and focus on the app directory.
 \section{Entry Point}
 \section{Build Process}
 \section{Control Flow}
 \section{Dependencies}
 \section{Functional Needs}
+\section{Algorithms}
+To find the underlying algorithms behind the operations performed on gimp, the wiki for the same had a link to the algorithms used. We expected to find all the underlying algorithms here but encountered a problem. There was only one operation described here shown in figure \ref{fig:algorithm}.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{algorithm.png}
+\caption{\label{fig:algorithm}Documentation on operation algorithms}
+\end{figure}
+
+Since this is implemented in the gimpoperationflood.c, the best way to find the algorithms for the other operations performed would be to have a look at where this file is located.
+ 
+The app/operations folder is where this file located. Looking at the other files in the folder, we got an idea of where to look incase we had to change or add any further operations. Since these operations are triggered using the GUI, changing something here would cause us to look at the UI elements to be updated as well.
+
 \section{Conclusion}
 
 \subsection{Tables and Figures}
@@ -156,11 +172,13 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 
 \newpage
 \begin{thebibliography}{9}
+	\bibitem{LocMetrics}
+	http://www.locmetrics.com/
+	
 	\bibitem{cloc} 
 	https://github.com/AlDanial/cloc
 	
-	\bibitem{LocMetrics}
-	http://www.locmetrics.com/
+	
 	
 \end{thebibliography}
 \end{document}
