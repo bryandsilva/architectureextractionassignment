@@ -98,8 +98,12 @@ Saurabh \textsc{Singh}\\
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
+\newpage
+\textbf{Note: Our fourth group member, Anto Anthony Arulappan had an emergency in the family and had to leave to India for the same. He has dropped the course and hence will no longer be a part of our group.}
+\newpage
 \tableofcontents
 \newpage
+
 \begin{abstract}
 Your abstract.
 \end{abstract}
@@ -132,14 +136,24 @@ LocMetrics\cite{locmetrics} is very similar to what CLOC does. We did find this 
 
 \section{Architecture Extraction Tool}
 \section{Directory Structure}
-The app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. Looking at the butterfly diagram below, we would ideally ignore the modules, plugins and libraries for now and focus on the app directory.
+We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that he app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory.
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{directorybutterfly.png}
+\caption{\label{fig:direc}Directory Structure}
+\end{figure}
+So we did the same for the app folder in figure \ref{fig:appfolder}. It was easy to comprehend since GIMP is very well organized with a good community support and documentation. The app/core directory is the guts of the GIMP software. Looking at the documentation provided for GIMP, major changes that need to be made start here. With the goal of refactoring in mind, this is where we would start, keeping in mind that changing files here will have an avalanche effect, so we need to be prepared for big changes in other files depending on these.
+\begin{figure}
+\centering
+\includegraphics[width=11cm,height=100cm,keepaspectratio]{appfolder.png}
+\caption{\label{fig:appfolder}Directory Structure for app folder}
+\end{figure}
 \section{Entry Point}
 \section{Build Process}
 \section{Control Flow}
 \section{Dependencies}
-\section{Functional Needs}
 \section{Algorithms}
-To find the underlying algorithms behind the operations performed on gimp, the wiki for the same had a link to the algorithms used. We expected to find all the underlying algorithms here but encountered a problem. There was only one operation described here shown in figure \ref{fig:algorithm}.
+To find the underlying algorithms behind the operations performed on GIMP, the wiki for the same had a link to the algorithms used. We expected to find all the underlying algorithms here but encountered a problem. There was only one operation described here shown in figure \ref{fig:algorithm}.
 
 \begin{figure}
 \centering
