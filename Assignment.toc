@@ -1,15 +1,14 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Finding a Software System}{3}
 \contentsline {section}{\numberline {2}About GIMP}{3}
-\contentsline {section}{\numberline {3}Counting the lines of code}{4}
+\contentsline {section}{\numberline {3}Lines of Code}{4}
 \contentsline {subsection}{\numberline {3.1}Count Lines of Code}{4}
 \contentsline {subsection}{\numberline {3.2}LocMetrics}{5}
 \contentsline {section}{\numberline {4}Architecture Extraction Tool}{5}
 \contentsline {section}{\numberline {5}Directory Structure}{5}
 \contentsline {section}{\numberline {6}Entry Point}{6}
 \contentsline {section}{\numberline {7}Build Process}{6}
-\contentsline {section}{\numberline {8}Control Flow}{6}
-\contentsline {section}{\numberline {9}Dependencies}{6}
-\contentsline {section}{\numberline {10}Algorithms}{6}
-\contentsline {section}{\numberline {11}Conclusion}{6}
-\contentsline {subsection}{\numberline {11.1}Tables and Figures}{6}
+\contentsline {section}{\numberline {8}Control Flow}{9}
+\contentsline {section}{\numberline {9}Dependencies}{9}
+\contentsline {section}{\numberline {10}Algorithms}{9}
+\contentsline {section}{\numberline {11}Conclusion}{10}

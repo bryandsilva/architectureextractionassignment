@@ -1,3 +1,18 @@
+%-------------------------------To - Do List-------------------------------------------------
+%1.  For section 3.2 for LocMetrics, need a talk a little more about it and
+%		add the graphs.
+%2. For section 4 we need to talk a little more about Understand C++
+%		as our primary extraction tool
+%3. Section 8 control flow. I didnt know what to do here
+%4. Section 9 Should we add the diagram for the header files here? Where
+%		would that ideally go
+%5. Section 11 conclusion needs to be added
+%6. Should we add an abstract?
+%7. Citations need to be updated/added
+%8. (Bryan) I can print the document and get a simple folder from dollarama
+% 	to add it to but lets finish this by tonight or tomorrow morning so 
+%		we don't need to spend too much time on it.
+%-----------------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % University Assignment Title Page 
 % LaTeX Template
@@ -119,12 +134,12 @@ We looked at the following software systems and games.
 
 \end{enumerate}
 
-We also looked at Doom3, SuperTuxKart, Wordpress, TuxRunner and Linux but found GIMP to be the most interesting on to use for this assignment
+We also looked at Doom3, SuperTuxKart, Wordpress, TuxRunner and Linux but found GIMP to be the most interesting one to use for this assignment
 \section{About GIMP}
-Gimp was designed initially as a General image manipulation program. This was later changed to GNU Image Manipulation Program. It is free and openly available to retouch and edit images, convert image formats and more specialized tasks targeted towards image manipulation. GIMP provides an interface to handle simple graphics needs without learning advanced methods for image manipulation. GIMP is more user friendly as compared to other photoshop techniques and can be modified to fit your needs. And the best part about it is that it is free.
-\section{Counting the lines of code}
+GIMP was designed initially as a General image manipulation program. This was later changed to GNU Image Manipulation Program. It is free and openly available to retouch and edit images, convert image formats and more specialized tasks targeted towards image manipulation. GIMP provides an interface to handle simple graphics needs without learning advanced methods for image manipulation. GIMP is more user friendly as compared to other photoshop techniques and can be modified to fit your needs. And the best part about it is that it is free.
+\section{Lines of Code}
 \subsection{Count Lines of Code}
-Count Lines of Code, abbreviated as CLOC is a software used to count comment lines, blank lines and physical lines of code\cite{gitid}. We used this software initially when we looked at what software system we need to pick. We can look at figure \ref{fig:clocgimp} for the output for GIMP.
+Count Lines of Code\cite{cloc}, abbreviated as CLOC is a software used to count comment lines, blank lines and physical lines of code. We used this software initially when we looked at what software system we need to pick. We can look at figure \ref{fig:clocgimp} for the output for GIMP. To sum it we have 3,695,059 LOC. However, we would assume that the chunk of our work would be for C which sums to about 608,029 LOC.  
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{clocgimp.png}
@@ -132,11 +147,11 @@ Count Lines of Code, abbreviated as CLOC is a software used to count comment lin
 \end{figure}
 %LocMetrics
 \subsection{LocMetrics}
-LocMetrics\cite{locmetrics} is very similar to what CLOC does. We did find this software interesting because of how it visualized the output.
+LocMetrics\cite{LocMetrics} is very similar to what CLOC does. We did find this software interesting because of how it visualized the output.
 
 \section{Architecture Extraction Tool}
 \section{Directory Structure}
-We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that he app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory.
+We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that he app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory. 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{directorybutterfly.png}
@@ -149,9 +164,63 @@ So we did the same for the app folder in figure \ref{fig:appfolder}. It was easy
 \caption{\label{fig:appfolder}Directory Structure for app folder}
 \end{figure}
 \section{Entry Point}
+While trying to build the application, we looked at MakeFile.am. The following line in MakeFile.am which gave us an idea about the entry point into the program. 
+\newline 
+\textbf{gimp\_@GIMP\_APP\_VERSION@\_SOURCES = \$(libapp\_sources) main.c}
+\newline
+Understand C++ has an option to generate a callby graph. Running this on main.c, instantly we can guess that main is not called by anything which further reinforces the idea that main is the entry point into the program. The call by graph for main.c is shown in figure \ref{fig:callbymain}
+\begin{figure}
+\centering
+\includegraphics[width=3cm,height=100cm,keepaspectratio]{callbymain.png}
+\caption{\label{fig:callbymain}Callby graph for main.c}
+\end{figure}
+
+So looking into the main.c to further reinforce our idea.
+ 
+The main.c has a main function which points to functions that talk about the installation directory.
+We did gain a lot of information from the Understand C++ software.
+ 
+Failures: We tried to use Doxygen to generate call graphs for comparison and better understanding. However, the tool crashed on the first go. And on the second go generated quite a bunch of call graphs when run directly on the app directory so will leave this tool aside for now.
+
+
 \section{Build Process}
+Analysis of any application can not be completed without building it. Like every application provide documentation related to how one can build the application on any platform eg Linux, Mac etc. Building any application not only help to compile any application to create executable but end up to helping to figure out what are the entry point with in the code of application.  Like in case of Gimp they have "MakeFile.am" which is a autogenerator file with in "master/app" directory to create "Makefile.in" . If you analyze Makefile.am you will get that "main.c" is the file from were compilation starts.
+
+We tried to use Doxygen to generate call graphs for comparison and better understanding. However, the tool crashed on the first go. And on the second go generated quite a bunch of call graphs when run directly on the master/app directory so will leave this tool aside for now.
+
+Talking about Dependencies required for the Gimp to get build you can check with in GIMP master folder you will find the INSTAL.in file which will tell how to build the application on particular platform with dependencies required. We are using Linux environment to build the application.
+
+To build this process we have two different type of	build system provided one through a Tarball and other  building from latest source (Git).We used the latter one to build the application.
+
+Being a product of GNOME ,gimp use many of their pre existing libraries which they utilize for their other products  as well like GLib , GObject ,GTK+, Cairo, Pango. 
+
+The two major libraries which gimp uses are GEGL and babl which one need to install before building this application. And both can be installed either using tarball or git on system before building. Links for both the libraries are present on wiki page of the application.\cite{wiki}.
+
+Once this is done we are require to just run autogen.sh which is a auto maker for configuration file. Once configuration file is generated we can run it to auto generate makefile. Also this is where you get to know if you have installed all libraries or not. This is the place where we got stuck as I already had a previous gimp installation and did not change the path for the new installation and end up having conflict between both of the installation which got resolved by just changing the default path. Once make file is generated you can run the “make” command  and then “make install”  to complete the build process.
+
+So if we see the major flow of the build after installing all libraries is as follows:
+\newline
+\textbf{ autogen.sh---config---make---make install}
+\newline
+
 \section{Control Flow}
 \section{Dependencies}
+Gimp has a dependency on many libraries some important ones are as follows:
+\begin{enumerate}
+\item \textbf{GLib:} \newline
+A common library which is basically used in most of the gnome applications, it contains the various utilities and data structures needed by the program in c.
+\item \textbf{GEGL:} \newline
+It is a graph based image processing library which is used by GIMP in order to support high bit depth images.
+\item \textbf{babl:} \newline
+It is a support library for GEGL. It is helpful in color-space conversions.
+\item \textbf{PDBTypes.h:} \newline
+It is helpful in defining enums for various fields contained in PDB.
+\item \textbf{GDK:} \newline
+It helps by acting as a wrapper around low level functions.
+\item \textbf{GObject:} \newline
+It is a library which is used to implement C objects.
+\end{enumerate}
+
 \section{Algorithms}
 To find the underlying algorithms behind the operations performed on GIMP, the wiki for the same had a link to the algorithms used. We expected to find all the underlying algorithms here but encountered a problem. There was only one operation described here shown in figure \ref{fig:algorithm}.
 
@@ -167,23 +236,6 @@ The app/operations folder is where this file located. Looking at the other files
 
 \section{Conclusion}
 
-\subsection{Tables and Figures}
-
-Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
-
-
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
-\begin{itemize}
-\item Like this,
-\item and like this.
-\end{itemize}
-
-We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
-
 \newpage
 \begin{thebibliography}{9}
 	\bibitem{LocMetrics}
@@ -191,6 +243,9 @@ We hope you find write\LaTeX\ useful, and please let us know if you have any fee
 	
 	\bibitem{cloc} 
 	https://github.com/AlDanial/cloc
+	
+	\bibitem{wiki}
+	https://wiki.gimp.org/
 	
 	
 	
