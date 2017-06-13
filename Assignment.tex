@@ -120,7 +120,7 @@ Saurabh \textsc{Singh}\\
 \newpage
 
 \begin{abstract}
-Your abstract.
+Like we already discussed in different presentation and even in class that to figure out the architecture of any application program comprehension is required.To do program comprehension either code must be properly written to give over all understanding or application documentation need to be done well to make other people understanding code a edge to grasp the logic easily. We went across different application which we have stated in next section and found Gimp to be most suitable in terms of code and documentation. Fulfilling the main aim of this assignment to get the better insight how to figure out high -level architecture we did used a mix approach of top-down and bottom-up approach along with taking help from well written documentation of Gimp present at http://wiki.gimp.org . 
 \end{abstract}
 
 \section{Finding a Software System}
@@ -137,21 +137,41 @@ We looked at the following software systems and games.
 We also looked at Doom3, SuperTuxKart, Wordpress, TuxRunner and Linux but found GIMP to be the most interesting one to use for this assignment
 \section{About GIMP}
 GIMP was designed initially as a General image manipulation program. This was later changed to GNU Image Manipulation Program. It is free and openly available to retouch and edit images, convert image formats and more specialized tasks targeted towards image manipulation. GIMP provides an interface to handle simple graphics needs without learning advanced methods for image manipulation. GIMP is more user friendly as compared to other photoshop techniques and can be modified to fit your needs. And the best part about it is that it is free.
-\section{Lines of Code}
+\section{Tools}
 \subsection{Count Lines of Code}
-Count Lines of Code\cite{cloc}, abbreviated as CLOC is a software used to count comment lines, blank lines and physical lines of code. We used this software initially when we looked at what software system we need to pick. We can look at figure \ref{fig:clocgimp} for the output for GIMP. To sum it we have 3,695,059 LOC. However, we would assume that the chunk of our work would be for C which sums to about 608,029 LOC.  
-\begin{figure}
-\centering
-\includegraphics[width=1\textwidth]{clocgimp.png}
-\caption{\label{fig:clocgimp}CLOC output for GIMP}
+Count Lines of Code\cite{cloc}, abbreviated as CLOC is a software used to count comment lines, blank lines and physical lines of code. We used this software initially when we looked at what software system we need to pick. We can look at figure \ref{fig:clocgimp output for GIMP}  for the output for GIMP. To sum it we have 3,695,059 LOC. However, we would assume that the chunk of our work would be for C which sums to about 608,029 LOC.  
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth, height=0.4\textheight]{clocgimp}
+	\caption{clocgimp output for GIMP}
+	\label{fig:clocgimp output for GIMP}
 \end{figure}
+
 %LocMetrics
 \subsection{LocMetrics}
-LocMetrics\cite{LocMetrics} is very similar to what CLOC does. We did find this software interesting because of how it visualized the output.
-
-\section{Architecture Extraction Tool}
+LocMetrics\cite{LocMetrics} is very similar to what CLOC does. We did find this software interesting because of how it visualized the output.LocMetrics counts total lines of code (LOC), blank lines of code (BLOC), comment lines of code, lines with both code and comments (C\&SLOC), logical source lines of code (SLOC-L), McCabe VG complexity (MVG), and number of comment words (CWORDS). Physical executable source lines of code (SLOC-P) is calculated as the total lines of source code minus blank lines and comment lines. Counts are calculated on a per file basis and accumulated for the entire project. LocMetrics also generates a comment word histogram. \cite{LocMetrics} 
+\newline LocMetric has a very unique way to represent data which can be visualize in the figure \ref{fig:LocMetrics representaion of GIMP}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth, height=0.5\textheight]{"Lines of code"}
+	\caption{LocMetrics representaion of GIMP}
+	\label{fig:LocMetrics representaion of GIMP}
+\end{figure}
+\subsection{Eclipse:}
+For the analysis part of this application IDE used is Eclipse as it provide features that are interesting for C/C++ developers like Some of the features that are interesting for C/C++ developers are:
+\textbf{cross-referencing:} Ctrl click an identifier and it will take you to its definition,
+call hierarchy,
+comprehensive search capabilities,
+built in Git support,
+Autotools integration,
+graphical debugger,
+explore remote systems from within Eclipse,
+focus on the current task,
+Bugzilla integration,
+static code analysis.
+and more. Eclipse runs on every platform that can run Java and has a graphical interface. Because of the above features Eclipse is good to use with the dependencies required for GIMP.
 \section{Directory Structure}
-We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that he app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory. 
+We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that the app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory. 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{directorybutterfly.png}
@@ -202,6 +222,20 @@ So if we see the major flow of the build after installing all libraries is as fo
 \newline
 \textbf{ autogen.sh---config---make---make install}
 \newline
+\newline
+Gimp can be build for three different platform Linux , Mac and Windows. Apart from few problem which I mentioned in the earlier section we also faced following issues.
+\begin{itemize}
+\item \textbf {We got error for relative path in the prefix.}
+If you google you get lot of solution for this and we figured out that the path we are using is not the absolute one so we were able to fix this issue after searching for two three time.
+\item \textbf{ Also we got old GTK+ version error. }
+As I already had one installation of gimp on my machine 
+so when for the first time I ran configuration file it gave me an      
+GTK+ old version error which I was able to fix by just making 
+An update for the library.
+	
+\end{itemize}
+To Summaries the build process we need to have to install all libraries which are mentioned in the wiki page
+
 
 \section{Control Flow}
 \section{Dependencies}
@@ -234,7 +268,15 @@ Since this is implemented in the gimpoperationflood.c, the best way to find the 
  
 The app/operations folder is where this file located. Looking at the other files in the folder, we got an idea of where to look incase we had to change or add any further operations. Since these operations are triggered using the GUI, changing something here would cause us to look at the UI elements to be updated as well.
 
+\section{Problem and Solution}
+We already discussed few problem which we faced during previous section here again we are going to put few specific issues which we faced.
+\newline
+\textbf{Make command stops with the error 'No rule to make target all':} So looking at different solution on line we figured out that with in the configure.ac we missed to update our directory path because of which this error occurred. We can also provide prefix when running the autogen.sh file.
+\newline
+\textbf{aclocal: error: non-option arguments are not accepted:} Tried editing the project environments setting to check if  ACLOCAL\_FLAGS variable doesn't appear here or is not printed boldly. Also remove if any quotes are present from the  ACLOCAL\_FLAGS
+
 \section{Conclusion}
+After doing the analysis of the GIMP code base things which we learned are that if the code is well written with proper documentation its not tough to do the comprehension. In case of Gimp like we already stated in abstract that it has well written code base with proper documentation which give you easy understanding of the code. And when you use different visualization tool it becomes more easy to get proper call graphs which help to locate entry point in code when you build your code. Other thing what we concluded is that, one should not start doing analysis without building the application, building application first ends up letting you know not only entry point in the code but also what all different libraries are required to build the application which in turn sometime are meaning full enough to determine the purpose of application.
 
 \newpage
 \begin{thebibliography}{9}

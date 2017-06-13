@@ -1,14 +1,15 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Finding a Software System}{3}
 \contentsline {section}{\numberline {2}About GIMP}{3}
-\contentsline {section}{\numberline {3}Lines of Code}{4}
+\contentsline {section}{\numberline {3}Tools}{4}
 \contentsline {subsection}{\numberline {3.1}Count Lines of Code}{4}
 \contentsline {subsection}{\numberline {3.2}LocMetrics}{5}
-\contentsline {section}{\numberline {4}Architecture Extraction Tool}{5}
-\contentsline {section}{\numberline {5}Directory Structure}{5}
-\contentsline {section}{\numberline {6}Entry Point}{6}
-\contentsline {section}{\numberline {7}Build Process}{6}
-\contentsline {section}{\numberline {8}Control Flow}{9}
-\contentsline {section}{\numberline {9}Dependencies}{9}
-\contentsline {section}{\numberline {10}Algorithms}{9}
-\contentsline {section}{\numberline {11}Conclusion}{10}
+\contentsline {subsection}{\numberline {3.3}Eclipse:}{6}
+\contentsline {section}{\numberline {4}Directory Structure}{6}
+\contentsline {section}{\numberline {5}Entry Point}{6}
+\contentsline {section}{\numberline {6}Build Process}{7}
+\contentsline {section}{\numberline {7}Control Flow}{10}
+\contentsline {section}{\numberline {8}Dependencies}{10}
+\contentsline {section}{\numberline {9}Algorithms}{11}
+\contentsline {section}{\numberline {10}Problem and Solution}{11}
+\contentsline {section}{\numberline {11}Conclusion}{12}
