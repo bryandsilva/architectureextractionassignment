@@ -276,6 +276,22 @@ We already discussed few problem which we faced during previous section here aga
 \textbf{Make command stops with the error 'No rule to make target all':} So looking at different solution on line we figured out that with in the configure.ac we missed to update our directory path because of which this error occurred. We can also provide prefix when running the autogen.sh file.
 \newline
 \textbf{aclocal: error: non-option arguments are not accepted:} Tried editing the project environments setting to check if  ACLOCAL\_FLAGS variable doesn't appear here or is not printed boldly. Also remove if any quotes are present from the  ACLOCAL\_FLAGS
+\section{Graph}
+Using LocMatrics we were able to visualize application in more detailed manner by creating different graph like below stating Complexity to biggest function in the application. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{9}
+	\caption{}
+	\label{fig:9}
+\end{figure}
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{6}
+	\caption{}
+	\label{fig:6}
+\end{figure}
+
 
 \section{Conclusion}
 After doing the analysis of the GIMP code base things which we learned are that if the code is well written with proper documentation its not tough to do the comprehension. In case of Gimp like we already stated in abstract that it has well written code base with proper documentation which give you easy understanding of the code. And when you use different visualization tool it becomes more easy to get proper call graphs which help to locate entry point in code when you build your code. Other thing what we concluded is that, one should not start doing analysis without building the application, building application first ends up letting you know not only entry point in the code but also what all different libraries are required to build the application which in turn sometime are meaning full enough to determine the purpose of application.
