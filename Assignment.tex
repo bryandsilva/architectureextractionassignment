@@ -52,6 +52,8 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage[document]{ragged2e}
+
 
 \begin{document}
 
@@ -118,7 +120,7 @@ Saurabh \textsc{Singh}\\
 \newpage
 \tableofcontents
 \newpage
-
+\justify
 \begin{abstract}
 Like we already discussed in different presentation and even in class that to figure out the architecture of any application program comprehension is required.To do program comprehension either code must be properly written to give over all understanding or application documentation need to be done well to make other people understanding code a edge to grasp the logic easily. We went across different application which we have stated in next section and found Gimp to be most suitable in terms of code and documentation. Fulfilling the main aim of this assignment to get the better insight how to figure out high -level architecture we did used a mix approach of top-down and bottom-up approach along with taking help from well written documentation of Gimp present at http://wiki.gimp.org . 
 \end{abstract}
@@ -172,7 +174,7 @@ static code analysis.
 and more. Eclipse runs on every platform that can run Java and has a graphical interface. Because of the above features Eclipse is good to use with the dependencies required for GIMP.
 \section{Directory Structure}
 We generated a butterfly diagram in figure \ref{fig:direc} for the directory structure. Using this and the documentation we did want to identify the main folder we would want to have a look at. We concluded that the app directory is the main directory that we are concerned about. It contains the source code for GIMP without any external tools or plugins. We would ideally ignore the modules, plugins and libraries for now and focus on the app directory. 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{directorybutterfly.png}
 \caption{\label{fig:direc}Directory Structure}

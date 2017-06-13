@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.2)  13 JUN 2017 01:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.2)  13 JUN 2017 01:08
 entering extended mode
 **./Assignment.tex
 (Assignment.tex
@@ -464,38 +464,77 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip48
 )
 \c@@todonotes@numberoftodonotes=\count125
-) (Assignment.aux)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks39
+\footnotemargin=\dimen163
+\c@pp@next@reset=\count126
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\CenteringLeftskip=\skip49
+\RaggedLeftLeftskip=\skip50
+\RaggedRightLeftskip=\skip51
+\CenteringRightskip=\skip52
+\RaggedLeftRightskip=\skip53
+\RaggedRightRightskip=\skip54
+\CenteringParfillskip=\skip55
+\RaggedLeftParfillskip=\skip56
+\RaggedRightParfillskip=\skip57
+\JustifyingParfillskip=\skip58
+\CenteringParindent=\skip59
+\RaggedLeftParindent=\skip60
+\RaggedRightParindent=\skip61
+\JustifyingParindent=\skip62
+)
+(Assignment.aux)
 \openout1 = `Assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen163
+\scratchcounter=\count127
+\scratchdimen=\dimen164
 \scratchbox=\box39
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen164
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks40
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen165
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -541,16 +580,25 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-ABD: EveryShipout initializing macros <dal.jpg, id=4, 653.8026pt x 217.0509pt>
-File: dal.jpg Graphic file (type jpg)
+ABD: EveryShipout initializing macros
+Package ragged2e Info: ABD: executing \RaggedRight on input line 58.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 58.
 
-<use dal.jpg>
-Package pdftex.def Info: dal.jpg used on input line 109.
+<dal.jpg, id=4, 653.8026pt x 217.0509pt>
+File: dal.jpg Graphic file (type jpg)
+ <use dal.jpg>
+Package pdftex.def Info: dal.jpg used on input line 111.
 (pdftex.def)             Requested size: 272.99881pt x 90.63084pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./dal.jpg>] [1] (Assignme
-nt.toc)
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./dal.jpg>]
+Overfull \hbox (6.72081pt too wide) in paragraph at lines 119--120
+\OT1/cmr/bx/n/12 an emer-gency in the fam-ily and had to leave to In-dia for th
+e same. 
+ []
+
+[1] (Assignment.toc)
 \tf@toc=\write4
 \openout4 = `Assignment.toc'.
 
@@ -558,38 +606,41 @@ nt.toc)
 File: clocgimp.png Graphic file (type png)
 
 <use clocgimp.png>
-Package pdftex.def Info: clocgimp.png used on input line 145.
+Package pdftex.def Info: clocgimp.png used on input line 147.
 (pdftex.def)             Requested size: 273.00119pt x 219.39908pt.
  <"Lines of code".png, id=26, 767.86874pt x 685.05937pt>
 File: "Lines of code".png Graphic file (type png)
 
 <use "Lines of code".png>
-Package pdftex.def Info: "Lines of code".png used on input line 156.
+Package pdftex.def Info: "Lines of code".png used on input line 158.
 (pdftex.def)             Requested size: 350.99773pt x 274.25931pt.
  [4 <./clocgimp.png>] [5 <./Lines of code.png>]
 <directorybutterfly.png, id=35, 663.47874pt x 400.49625pt>
 File: directorybutterfly.png Graphic file (type png)
 
 <use directorybutterfly.png>
-Package pdftex.def Info: directorybutterfly.png used on input line 177.
+Package pdftex.def Info: directorybutterfly.png used on input line 179.
 (pdftex.def)             Requested size: 390.0pt x 235.41685pt.
  <appfolder.png, id=36, 276.03125pt x 478.78876pt>
 File: appfolder.png Graphic file (type png)
 
 <use appfolder.png>
-Package pdftex.def Info: appfolder.png used on input line 183.
+Package pdftex.def Info: appfolder.png used on input line 185.
 (pdftex.def)             Requested size: 313.01097pt x 542.93178pt.
 
 
-LaTeX Warning: Float too large for page by 21.26509pt on input line 185.
+LaTeX Warning: Float too large for page by 21.26509pt on input line 187.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <callbymain.png, id=37, 102.3825pt x 64.24pt>
 File: callbymain.png Graphic file (type png)
  <use callbymain.png>
-Package pdftex.def Info: callbymain.png used on input line 194.
+Package pdftex.def Info: callbymain.png used on input line 196.
 (pdftex.def)             Requested size: 85.36331pt x 53.5613pt.
 
-Overfull \hbox (31.71944pt too wide) in paragraph at lines 187--197
+Overfull \hbox (31.71944pt too wide) in paragraph at lines 189--199
 \OT1/cmr/bx/n/12 gimp[]@GIMP[]APP[]VERSION@[]SOURCES = $(libapp[]sources) main.
 c 
  []
@@ -598,32 +649,32 @@ c
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 221--227
+Underfull \hbox (badness 10000) in paragraph at lines 223--229
 
  []
 
 [9 <./callbymain.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 228.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 228.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
 [10] <algorithm.png, id=58, 674.52pt x 56.21pt>
 File: algorithm.png Graphic file (type png)
  <use algorithm.png>
-Package pdftex.def Info: algorithm.png used on input line 263.
+Package pdftex.def Info: algorithm.png used on input line 265.
 (pdftex.def)             Requested size: 390.0pt x 32.50061pt.
  [11 <./algorithm.png>] [12] [13] (Assignment.aux) ) 
 Here is how much of TeX's memory you used:
- 13511 strings out of 493333
- 263192 string characters out of 3139189
- 315052 words of memory out of 3000000
- 16751 multiletter control sequences out of 15000+200000
+ 13688 strings out of 493333
+ 266356 string characters out of 3139189
+ 317459 words of memory out of 3000000
+ 16918 multiletter control sequences out of 15000+200000
  11333 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,56p,869b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,7n,56p,869b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
@@ -631,7 +682,7 @@ blic/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Assignment.pdf (14 pages, 906648 bytes).
+Output written on Assignment.pdf (14 pages, 900824 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
